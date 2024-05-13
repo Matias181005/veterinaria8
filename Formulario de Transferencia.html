@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Transferencia de Animal</title>
+    <link rel="stylesheet" href="/css/Declaracion de Posecion de Mascotas.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <style>
+        .navbar-custom {
+            background-color: #4CAF50 !important; 
+        }
+        .navbar-custom .navbar-brand {
+            color: #FFFFFF !important; 
+        }
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF !important; 
+        }
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #FFA500 !important; 
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <form action="#" method="post" class="formulario">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom bg-custom">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#Registros">Registra Tu Mascota</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#Requisitos">Requisitos Para El Registro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contactos">Nuestras Redes sociales</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <h2>Datos del Animal</h2>
+        <div class="campo">
+            <label for="nombre_animal">Nombre:</label>
+            <input type="text" id="nombre_animal" name="nombre_animal" required>
+        </div>
+        <div class="campo">
+            <label for="especie">Especie:</label>
+            <select id="especie" name="especie" required>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="loro">Loro</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="macho">Macho</option>
+                <option value="hembra">Hembra</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="raza">Raza:</label>
+            <input type="text" id="raza" name="raza">
+        </div>
+        <div class="campo">
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        </div>
+        <div class="campo">
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color">
+        </div>
+        <div class="campo">
+            <label for="modo_obtencion">Modo de Obtención:</label>
+            <select id="modo_obtencion" name="modo_obtencion" required>
+                <option value="recogido">Recogido</option>
+                <option value="reubicacion">Reubicación</option>
+                <option value="regalo">Regalo</option>
+                <option value="nacido_casa">Nacido en Casa</option>
+                <option value="compra">Compra</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="otros_antecedentes">Otros Antecedentes:</label>
+            <textarea id="otros_antecedentes" name="otros_antecedentes"></textarea>
+        </div>
+        <div class="campo">
+            <label for="razon_tenencia">Razón de Tenencia:</label>
+            <select id="razon_tenencia" name="razon_tenencia" required>
+                <option value="compañia">Compañía</option>
+                <option value="asistencia">Asistencia</option>
+                <option value="terapia">Terapia</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="seguridad">Seguridad</option>
+                <option value="deporte">Deporte</option>
+                <option value="exposicion">Exposición</option>
+                <option value="reproduccion">Reproducción</option>
+                <option value="caza">Caza</option>
+            </select>
+        </div>
+        <h2>Datos de quien Transfiere</h2>
+        <div class="campo">
+            <label for="nombre_transfiere">Nombre:</label>
+            <input type="text" id="nombre_transfiere" name="nombre_transfiere" required>
+        </div>
+        <div class="campo">
+            <label for="rut_transfiere">RUT:</label>
+            <input type="text" id="rut_transfiere" name="rut_transfiere" required>
+        </div>
+        <div class="campo">
+            <label for="domicilio_transfiere">Domicilio:</label>
+            <input type="text" id="domicilio_transfiere" name="domicilio_transfiere" required>
+        </div>
+        <div class="campo">
+            <label for="region_transfiere">Región:</label>
+            <input type="text" id="region_transfiere" name="region_transfiere" required>
+        </div>
+        <div class="campo">
+            <label for="telefono_fijo_transfiere">Teléfono Fijo:</label>
+            <input type="tel" id="telefono_fijo_transfiere" name="telefono_fijo_transfiere">
+        </div>
+        <div class="campo">
+            <label for="telefono_movil_transfiere">Teléfono Móvil:</label>
+            <input type="tel" id="telefono_movil_transfiere" name="telefono_movil_transfiere" required>
+        </div>
+        <div class="campo">
+            <label for="email_transfiere">Correo Electrónico:</label>
+            <input type="email" id="email_transfiere" name="email_transfiere" required>
+        </div>
+        <div class="campo">
+            <label for="firma_transfiere">Firma de quien Transfiere:</label>
+            <canvas id="firma_transfiere" width="300" height="150"></canvas>
+        </div>
+        <h2>Datos de quien Adquiere el Animal</h2>
+        <div class="campo">
+            <label for="nombre_adquiere">Nombre:</label>
+            <input type="text" id="nombre_adquiere" name="nombre_adquiere" required>
+        </div>
+        <div class="campo">
+            <label for="rut_adquiere">RUT:</label>
+            <input type="text" id="rut_adquiere" name="rut_adquiere" required>
+        </div>
+        <div class="campo">
+            <label for="domicilio_adquiere">Domicilio:</label>
+            <input type="text" id="domicilio_adquiere" name="domicilio_adquiere" required>
+        </div>
+        <div class="campo">
+            <label for="region_adquiere">Región:</label>
+            <input type="text" id="region_adquiere" name="region_adquiere" required>
+        </div>
+        <div class="campo">
+            <label for="telefono_fijo_adquiere">Teléfono Fijo:</label>
+            <input type="tel" id="telefono_fijo_adquiere" name="telefono_fijo
+            <div class="campo">
+                <label for="telefono_movil_adquiere">Teléfono Móvil:</label>
+                <input type="tel" id="telefono_movil_adquiere" name="telefono_movil_adquiere" required>
+            </div>
+            <div class="campo">
+                <label for="email_adquiere">Correo Electrónico:</label>
+                <input type="email" id="email_adquiere" name="email_adquiere" required>
+            </div>
+            <div class="campo">
+                <label for="firma_adquiere">Firma de quien Adquiere:</label>
+                <canvas id="firma_adquiere" width="300" height="150"></canvas>
+            </div>
+    
+            <h2>Fecha de Procedimiento</h2>
+            <div class="campo">
+                <label for="fecha_procedimiento">Fecha de Procedimiento:</label>
+                <input type="date" id="fecha_procedimiento" name="fecha_procedimiento" required>
+            </div>
+    
+            <div class="campo enviar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

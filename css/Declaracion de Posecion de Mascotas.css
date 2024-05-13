@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d3d3d3;
+}   
+
+body h2{
+    text-align: center;
+    background-color: #D3D3D3;
+    padding: 10px;
+    border-radius: 1000px;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+.formulario {
+    width: 30%;
+    background-color: #b2d8d8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:10px black;
+    border: 5px solid black;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.enviar {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: flex-start;
+    }
+
+.formulario {
+        width: 90%; 
+        max-width: 300px; 
+    }
+}
